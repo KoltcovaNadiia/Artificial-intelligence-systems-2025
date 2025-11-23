@@ -4,9 +4,7 @@ from sklearn.metrics import classification_report
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.ensemble import ExtraTreesClassifier
 
-# -------------------------------
 # Візуалізація вхідних даних
-# -------------------------------
 def visualize_input_data(X, y, title, save_file=None):
     plt.figure(figsize=(8, 6))
     colors = ['red', 'blue', 'green']
@@ -22,9 +20,7 @@ def visualize_input_data(X, y, title, save_file=None):
         plt.savefig(save_file, dpi=300, bbox_inches='tight')
     plt.show()
 
-# -------------------------------
 # Візуалізація зон класифікації
-# -------------------------------
 def visualize_classifier(classifier, X, y, title, save_file=None):
     x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
     y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
@@ -47,9 +43,7 @@ def visualize_classifier(classifier, X, y, title, save_file=None):
         plt.savefig(save_file, dpi=300, bbox_inches='tight')
     plt.show()
 
-# -------------------------------
 # Основна функція
-# -------------------------------
 def main():
     # Завантаження даних
     input_file = 'data_random_forests.txt'
