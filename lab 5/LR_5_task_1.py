@@ -102,8 +102,6 @@ def main():
     visualize_classifier(clf, test_points, np.zeros(len(test_points)), f'Test Points - {classifier_name}', savepath='test_points.png' if args.saveplots else None)
 
 
-# ---------------------------
 # Запуск
-# ---------------------------
 if __name__ == "__main__":
     main()
